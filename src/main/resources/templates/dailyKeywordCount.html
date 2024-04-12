@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Keyword Count</title>
+</head>
+<body>
+<h1>Daily Keyword Count</h1>
+<div th:if="${dailyKeywordCount == 0}">
+  <p>No daily count available for the specified keyword.</p>
+</div>
+<div th:if="${dailyKeywordCount != 0}">
+  <p>The daily count for keyword <strong th:text="${keyword}"></strong> is <strong th:text="${dailyKeywordCount}"></strong>.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Users with Same Keyword</title>
+</head>
+<body>
+<h1>Users with Same Keyword</h1>
+<ul>
+  <li th:each="user : ${users}">
+    <span th:text="${user.username}"></span>
+  </li>
+</ul>
+</body>
+</html>
