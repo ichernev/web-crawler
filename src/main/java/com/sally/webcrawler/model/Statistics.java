@@ -1,11 +1,8 @@
 package com.sally.webcrawler.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Data;
-import org.springframework.data.annotation.Id;
+// import org.springframework.data.annotation.Id;
 
 import java.time.LocalDate;
 
