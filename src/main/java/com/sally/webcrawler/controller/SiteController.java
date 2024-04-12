@@ -31,27 +31,27 @@ public class SiteController {
     @GetMapping("/")
     public String home() {
 
-//        List<News> extractedNews;
-//
-//        for (int i = 1; i <= 31; i++) {
-//            System.out.println("Extracting for date 2024-1-" + i + " ... ");
-//
-//            extractedNews = extractNews("https://www.novinite.bg/archives/2024-1-" + i);
-//
-//            List<News> s = newsRepository.saveAll(extractedNews);
-//
-//            System.out.println("Extracted and saved total of " + s.size() + " news");
-//        }
-//
-//        for (int i = 1; i <= 29; i++) {
-//            System.out.print("Extracting for date 2024-2-" + i);
-//
-//            extractedNews = extractNews("https://www.novinite.bg/archives/2024-2-" + i);
-//
-//            List<News> s = newsRepository.saveAll(extractedNews);
-//
-//            System.out.println(" [ Extracted and saved total of " + s.size() + " news ]");
-//        }
+        List<News> extractedNews;
+
+        for (int i = 1; i <= 31; i++) {
+            System.out.println("Extracting for date 2024-1-" + i + " ... ");
+
+            extractedNews = extractNews("https://www.novinite.bg/archives/2024-1-" + i);
+
+            List<News> s = newsRepository.saveAll(extractedNews);
+
+            System.out.println("Extracted and saved total of " + s.size() + " news");
+        }
+
+        for (int i = 1; i <= 29; i++) {
+            System.out.print("Extracting for date 2024-2-" + i);
+
+            extractedNews = extractNews("https://www.novinite.bg/archives/2024-2-" + i);
+
+            List<News> s = newsRepository.saveAll(extractedNews);
+
+            System.out.println(" [ Extracted and saved total of " + s.size() + " news ]");
+        }
 
         return "index";
     }
